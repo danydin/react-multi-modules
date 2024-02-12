@@ -7,7 +7,7 @@ const data = [
     {
         id: 2,
         question: "bla bla this is a question 2",
-        answer: "this is a answer 2",
+        answer: "this is a answer 2 lorem ipsum bla bla this is a answer la bla this is a answer la bla this is a answer",
     },
     {
         id: 3,

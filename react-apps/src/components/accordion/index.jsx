@@ -1,5 +1,6 @@
 import { useState } from "react"
 import data from "./data"
+import "./style.css"
 
 export default function Accordion() {
     const [seleceted, setSelected] = useState(null)
@@ -14,9 +15,9 @@ export default function Accordion() {
             <div className="item">
                 <div onClick={()=>singleSelection(dataItem.id)} className="title">
                     <h3>{dataItem.question}</h3>
-                    {seleceted===dataItem.id? <div className="answer">{dataItem.answer}</div> : null}
                     <span>+</span>
                 </div>
+                {seleceted===dataItem.id? <div className="answer">{dataItem.answer}</div> : null}
             </div>
             ) 
             : <div> no data found </div>
