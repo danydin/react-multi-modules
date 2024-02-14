@@ -33,8 +33,8 @@ export default function Accordion() {
             </button>
             <div className="accordion">
                 {data && data.length > 0 ? (
-                    data.map((dataItem) => (
-                        <div className="item">
+                    data.map((dataItem,index) => (
+                        <div key={index} className="item">
                             <div
                                 onClick={
                                     enableMultipleSelection
