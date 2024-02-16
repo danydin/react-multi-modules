@@ -44,7 +44,7 @@ export default function ImageSlider({ url, limit = 5 }) {
                 <BsArrowLeftCircleFill onClick={handlePrevious} className='arrow arrow-left' />
                 {images && images.length ?
                     images.map((imageItem, index) => (
-                        console.log(imageItem),
+                        // console.log(imageItem),
                         <img key={imageItem.id} src={imageItem.download_url} alt={imageItem.author} className={currentSlide === index ? 'current-image' : 'current-image hide'} />
                     )) : null}
                 <BsArrowRightCircleFill onClick={handleNext} className='arrow arrow-right' />
