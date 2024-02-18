@@ -10,11 +10,11 @@ import { menus } from "./components/nested-nav/data";
 function App() {
   return (
     <div className="App">
-      {/* <Accordion />
+      <Accordion />
       <GenerateColor />
       <StarRating />
-      <ImageSlider url={"https://picsum.photos/v2/list"} limit={10} /> */}
-      {/* <LoadMoreGallery /> */}
+      <ImageSlider url={"https://picsum.photos/v2/list"} limit={10} />
+      <LoadMoreGallery limit={12}/>
       <NestedNav navList={menus}/>
     </div>
   );
