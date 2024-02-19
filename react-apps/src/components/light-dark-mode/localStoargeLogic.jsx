@@ -15,7 +15,6 @@ export default function LocalStorageLogic(key, defaultValue) {
         localStorage.setItem(key, JSON.stringify(value))
     },[key,value])
 
-    // why?
     return [value, setValue]
 
 }

@@ -12,9 +12,9 @@ export default function QrGen() {
 
     return <div style={{height:'100vh',width:'100vw'}}>
         <h1>QR Code Generator</h1>
-        <div style={{padding:'20px'}}>
-            <input onChange={(e) => setInput(e.target.value)} value={input} type="text" name="qr-code" placeholder="Enter your desired QR code" />
-            <button disabled={!input && !input.trim() } onClick={handleQR}>Genereate QR code</button>
+        <div style={{padding:'20px', display:'flex', justifyContent:'center', alignItems:'center'}}>
+            <input style={{padding:'20px', marginRight:'10px', fontSize:'20px'}}onChange={(e) => setInput(e.target.value)} value={input} type="text" name="qr-code" placeholder="Enter your desired QR code" />
+            <button style={{padding:'25px', fontSize:'20px'}} disabled={!input && !input.trim() } onClick={handleQR}>Genereate QR code</button>
         </div>
         <div>
             <QRCode id="qr-code-value" value={qrCode} size={400} bgColor="#fff" />

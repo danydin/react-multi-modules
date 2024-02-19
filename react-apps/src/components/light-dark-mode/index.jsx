@@ -1,18 +1,19 @@
-import { useState } from "react"
 import LocalStorageLogic from "./localStoargeLogic"
+import './style.css'
 
-export default function LightDarkMode(){
-    const [mode, setMode] = useState('light')
-    const [theme, setTheme] = LocalStorageLogic('theme','light')
+export default function LightDarkMode() {
+    const [mode, setMode] = LocalStorageLogic('theme', 'light')
 
-    function handleToggle(){
-        setTheme(theme==='light'?'dark':'light')
+    function handleToggle() {
+        setMode(mode === 'light' ? 'dark' : 'light')
     }
-    console.log(theme)
-    return <div className="light-dark-mode-container">
+
+    console.log(mode)
+
+    return <div className="light-dark-mode-container" data-mode={mode}>
         <div className="light-dark-mode">
-            <p>Lorem ipusm</p>
+            <p>Mode Color</p>
             <button onClick={handleToggle}>Change to {mode==='light'?'dark Mode': 'light mode'}</button>
         </div>
-    </div>
+    </div >
 }
