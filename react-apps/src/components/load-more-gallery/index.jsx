@@ -12,17 +12,17 @@ export default function LoadMoreGallery({limit=2}) {
         try {
             setLoading(true)
             const response = await fetch(`https://dummyjson.com/products?limit=${limit}&skip=${loadMoreButton * limit}`)
-            console.log(response)
+            // console.log(response)
             const results = await response.json()
             if (results && results.products && loadMoreButton !== 0) {
                 setProducts((prevResults) => [...prevResults, ...results.products])
                 setLoading(false)
-                console.log(results.products)
+                // console.log(results.products)
             } else {
                 if (results && results.products && results.products.length) {
                     setProducts([...results.products])
                     setLoading(false)
-                    console.log(results.products)
+                    // console.log(results.products)
                 }
             }
         } catch (err) {

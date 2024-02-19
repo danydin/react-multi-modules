@@ -11,7 +11,7 @@ export default function MenuItem({ item }) {
             [currentLabel]: !displayCurrentChildren[currentLabel]
         })
     }
-    console.log(displayCurrentChildren)
+    // console.log(displayCurrentChildren)
     return <li>
         <div className="menu-item">
             <p>{item.label}</p>

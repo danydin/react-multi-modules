@@ -8,6 +8,7 @@ import NestedNav from "./components/nested-nav";
 import { menus } from "./components/nested-nav/data";
 import QrGen from "./components/qr-generator";
 import LightDarkMode from "./components/light-dark-mode";
+import ScrollIndicator from "./components/scroll-bar-indicator";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <NestedNav navList={menus}/>
       <QrGen />
       <LightDarkMode />
+      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/>
     </div>
   );
 }

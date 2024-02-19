@@ -8,7 +8,7 @@ export default function LightDarkMode() {
         setMode(mode === 'light' ? 'dark' : 'light')
     }
 
-    console.log(mode)
+    // console.log(mode)
 
     return <div className="light-dark-mode-container" data-mode={mode}>
         <div className="light-dark-mode">
