@@ -6,6 +6,8 @@ import ImageSlider from "./components/images-slider";
 import LoadMoreGallery from "./components/load-more-gallery";
 import NestedNav from "./components/nested-nav";
 import { menus } from "./components/nested-nav/data";
+import QrGen from "./components/qr-generator";
+import LightDarkMode from "./components/light-dark-mode";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <ImageSlider url={"https://picsum.photos/v2/list"} limit={10} />
       <LoadMoreGallery limit={12}/>
       <NestedNav navList={menus}/>
+      <QrGen />
+      <LightDarkMode />
     </div>
   );
 }
