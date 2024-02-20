@@ -9,6 +9,7 @@ import { menus } from "./components/nested-nav/data";
 import QrGen from "./components/qr-generator";
 import LightDarkMode from "./components/light-dark-mode";
 import ScrollIndicator from "./components/scroll-bar-indicator";
+import MultiTabs from "./components/multi-tabs/index";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <QrGen />
       <LightDarkMode />
       <ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/>
+      <MultiTabs />
     </div>
   );
 }
