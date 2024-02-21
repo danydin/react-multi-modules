@@ -27,8 +27,6 @@
   padding: 0;
   border: 1px solid red;
   width: 80%;
-  animation-name: animateModal;
-  animation-duration: 0.5s;
 }
 
 .modal-close-icon {
@@ -56,14 +54,4 @@
   padding: 2px 16px;
   background-color: #5cb85c;
   color: #fff;
-}
-
-@keyframes animateModal {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
