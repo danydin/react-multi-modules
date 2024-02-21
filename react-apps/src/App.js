@@ -12,6 +12,7 @@ import ScrollIndicator from "./components/scroll-bar-indicator";
 import MultiTabs from "./components/multi-tabs/index";
 import Modal from "./components/modal/modal";
 import GithubProfileFinder from "./components/github-profile-finder";
+import SearchAutocomplete from "./components/api-search-filter";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <MultiTabs />
       <Modal />
       <GithubProfileFinder />
+      <SearchAutocomplete />
     </div>
   );
 }

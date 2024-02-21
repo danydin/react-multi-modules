@@ -1,5 +1,5 @@
 .modalContainer {
-  height: 80vh;
+  height: 70vh;
   display: grid;
   place-content: center;
 }

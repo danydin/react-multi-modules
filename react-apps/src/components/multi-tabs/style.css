@@ -1,6 +1,6 @@
 .multi-tabs-container {
     padding: 8px;
-    height: 80vh;
+    height: 60vh;
     display: grid;
   place-content: center;
   }
