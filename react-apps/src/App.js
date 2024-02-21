@@ -10,6 +10,7 @@ import QrGen from "./components/qr-generator";
 import LightDarkMode from "./components/light-dark-mode";
 import ScrollIndicator from "./components/scroll-bar-indicator";
 import MultiTabs from "./components/multi-tabs/index";
+import Modal from "./components/modal/modal";
 
 function App() {
   return (
@@ -18,12 +19,13 @@ function App() {
       <GenerateColor />
       <StarRating />
       <ImageSlider url={"https://picsum.photos/v2/list"} limit={10} />
-      <LoadMoreGallery limit={12}/>
-      <NestedNav navList={menus}/>
+      <LoadMoreGallery limit={12} />
+      <NestedNav navList={menus} />
       <QrGen />
       <LightDarkMode />
-      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/>
+      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
       <MultiTabs />
+      <Modal />
     </div>
   );
 }

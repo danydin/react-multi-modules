@@ -1,7 +1,8 @@
 .multi-tabs-container {
     padding: 8px;
-    height: 100vh;
-    
+    height: 80vh;
+    display: grid;
+  place-content: center;
   }
   
   .multi-tabs-heading {
@@ -30,7 +31,6 @@
   
   .content {
     padding: 20px 10px;
-    height: 300px;
     overflow: auto;
     background-color: #fff;
   }
