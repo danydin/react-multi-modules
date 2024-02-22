@@ -47,6 +47,7 @@ export default function TicTacToe() {
 
   function handleClick(getCurrentSquare) {
     let cpySquares = [...squares];
+    // check if there's a winner / square is occupied and return if either is truthy to avoid actions
     if (getWinner(cpySquares) || cpySquares[getCurrentSquare]) return;
     cpySquares[getCurrentSquare] = isXTurn ? "X" : "O";
     setIsXTurn(!isXTurn);
