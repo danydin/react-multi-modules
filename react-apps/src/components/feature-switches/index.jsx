@@ -3,7 +3,7 @@ import { FeatureFlagsContext } from "./context";
 import LightDarkMode from "../light-dark-mode";
 import TicTacToe from "../tic-tac-toe";
 import GenerateColor from "../random-color-gen";
-import Accordion from "../accordion";
+import SingleMultiSelection from "../multi-selection";
 import NestedNav from "../nested-nav";
 import { menus } from "../nested-nav/data";
 import MutliTabs from "../multi-tabs";
@@ -26,11 +26,11 @@ export default function FeatureFlags() {
             component: <GenerateColor />,
         },
         {
-            key: "showAccordian",
-            component: <Accordion />,
+            key: "showAccordion",
+            component: <SingleMultiSelection />,
         },
         {
-            key: "showTreeView",
+            key: "showNestedNav",
             component: <NestedNav navList={menus} />,
         },
         {

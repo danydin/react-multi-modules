@@ -1,5 +1,5 @@
 import "./App.css";
-import Accordion from "./components/accordion/index";
+import SingleMultiSelection from "./components/multi-selection/index";
 import GenerateColor from "./components/random-color-gen";
 import StarRating from "./components/star-rating";
 import ImageSlider from "./components/images-slider";
@@ -16,11 +16,12 @@ import SearchAutocomplete from "./components/api-search-filter";
 import TicTacToe from "./components/tic-tac-toe";
 import FeatureFlagGlobalState from "./components/feature-switches/context";
 import FeatureFlags from "./components/feature-switches";
+import UseFetchHook from "./components/custom-hooks/fetch-hook/index";
 
 function App() {
   return (
     <div className="App">
-      <Accordion />
+      <SingleMultiSelection />
       <GenerateColor />
       <StarRating />
       <ImageSlider url={"https://picsum.photos/v2/list"} limit={10} />
@@ -37,6 +38,7 @@ function App() {
       <FeatureFlagGlobalState>
       <FeatureFlags />
       </FeatureFlagGlobalState>
+      <UseFetchHook />
     </div>
   );
 }
