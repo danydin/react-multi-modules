@@ -18,6 +18,7 @@ import FeatureFlagGlobalState from "./components/feature-switches/context";
 import FeatureFlags from "./components/feature-switches";
 import UseFetchHook from "./components/custom-hooks/fetch/index";
 import OnClickOutside from "./components/custom-hooks/click";
+import WindowResize from "./components/custom-hooks/scroll";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
       </FeatureFlagGlobalState>
       <UseFetchHook />
       <OnClickOutside />
+      <WindowResize />
     </div>
   );
 }

@@ -3,13 +3,13 @@ import useOutsideClick from "./logic";
 
 export default function OnClickOutside() {
   const [showContent, setShowContent] = useState(false);
-  const ref = useRef();
-  useOutsideClick(ref, () => setShowContent(false));
+  const divRef = useRef();
+  useOutsideClick(divRef, () => setShowContent(false));
 
   return (
     <div style={{height:"60vh", display:"flex", justifyContent:"center", alignItems:"center"}}>
       {showContent ? (
-        <div ref={ref}>
+        <div ref={divRef}>
           <h1>This is a random content</h1>
           <p>
             Please click outside of this to close this. It won't close if you

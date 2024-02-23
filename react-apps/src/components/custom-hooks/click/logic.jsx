@@ -7,7 +7,7 @@ export default function useOutsideClick(ref, handler) {
         return;
       }
 
-      handler(event);
+      handler();
     }
 
     document.addEventListener("mousedown", listener);
