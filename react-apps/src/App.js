@@ -20,7 +20,7 @@ import UseFetchHook from "./components/custom-hooks/fetch/index";
 import OnClickOutside from "./components/custom-hooks/click";
 import WindowResize from "./components/custom-hooks/resize";
 import ScrollToTopAndBottom from "./components/scroll/top-bottom";
-import ScrollToSection from "./components/scroll/specific";
+import ScrollToSection from "./components/scroll/ref";
 
 function App() {
   return (

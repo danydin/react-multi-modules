@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 export default function ScrollToSection() {
-  const ref = useRef();
+  const specificRef = useRef();
 
   const data = [
     {
@@ -47,14 +47,7 @@ export default function ScrollToSection() {
   ];
 
   function handleScrollToSection() {
-    const refPosition = ref.current.getBoundingClientRect().top;
-    const scrollSize = document.documentElement.scrollHeight;
-    const refTotal = scrollSize - refPosition;
-
-    window.scrollTo({
-      top: refTotal,
-      behavior: "smooth",
-    });
+    specificRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
@@ -62,7 +55,7 @@ export default function ScrollToSection() {
       <h1>Scroll to a particular section</h1>
       <button style={{fontSize: "20px",padding:"10px"}} onClick={handleScrollToSection}>Click To Scroll to a specific location based on Ref</button>
       {data.map((dataItem, index) => (
-        <div ref={index === 2 ? ref : null} style={dataItem.style}>
+        <div ref={index === 3 ? specificRef : null} style={dataItem.style}>
           <h3>{dataItem.label}</h3>
         </div>
       ))}
