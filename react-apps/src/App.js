@@ -20,11 +20,13 @@ import UseFetchHook from "./components/custom-hooks/fetch/index";
 import OnClickOutside from "./components/custom-hooks/click";
 import WindowResize from "./components/custom-hooks/resize";
 import ScrollToTopAndBottom from "./components/scroll/top-bottom";
-import ScrollToSection from "./components/scroll/ref";
+import ScrollToSection from "./components/scroll/specific";
+import Weather from "./components/weather";
 
 function App() {
   return (
     <div className="App">
+      <Weather />
       <SingleMultiSelection />
       <GenerateColor />
       <StarRating />
